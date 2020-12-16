@@ -1,0 +1,1257 @@
+
+
+
+
+/* general */
+
+*{
+     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+
+body{
+     background-color:  #F5F5F7;
+}   
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: url('/img/loader.png') 50% 50% no-repeat;
+    animation: loader 1s infinite;
+	transform-origin: center;
+}
+
+/* fuentes */
+
+@font-face {
+    font-family: 'recoletabold';
+    src: url('/font/recoleta-bold-webfont.woff2') format('woff2'),
+         url('/font/recoleta-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'recoletaregular';
+    src: url('/font/recoleta-regular-webfont.woff2') format('woff2'),
+         url('/font/recoleta-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+@font-face {
+    font-family: 'recoletasemibold';
+    src: url('/font/recoleta-semibold-webfont.woff2') format('woff2'),
+         url('/font/recoleta-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* --------------D E S K T O P ---------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+/* navbar */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    }
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    align-items: center;   
+    height: 60px;
+    background-color: #F5F5F7;
+    font-family: 'Helvetica Neue';
+    font-size: 16px;
+    font-weight: bold;
+    }
+
+.logo a{
+    text-decoration: none;
+    color: #679F6F;
+    }
+
+.logo{
+    width: 100px;
+    }
+
+.hidden{
+display: none;
+    }
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    min-width: 100px;
+    list-style: none;
+    transition: width 0.5s ease-in;
+    }
+
+.nav-links a{
+    text-decoration: none;
+    color: #679F6F;
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    }
+
+.burger div{
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #679F6F;
+    margin:4px;
+    transition:all 0.3s ease-in;
+}
+
+
+
+
+
+
+
+/* main */
+
+.inicio{
+    width: 477px;
+    margin: auto;
+    }
+
+.hola, .jona{
+    font-family: 'recoletabold';
+    margin-top: 150px;
+    font-size: 105px;
+    line-height: 80px;
+    color: #679F6F;
+    }
+
+.yo {
+  height: 418px;  
+  display: block;
+  margin: auto;
+  margin-top: -100px;
+    }
+
+
+.jona{
+   text-align: right;
+   margin-top: -260px;
+   color:#FF8080;
+    }
+
+h2{
+    font-family: 'recoletabold';
+    opacity: .2;
+    font-size:15px;
+    text-align: right;
+    }
+
+.contenido{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 700px;
+    font-family: 'Helvetica Neue';
+    font-size: 17px;
+    margin-top: 300px;
+    line-height: 17px;
+    margin-bottom: 100px;
+    transition: all 0.5s ease-in;
+    }
+
+.contenido p:nth-child(2){
+    opacity: .5;
+    }
+
+.personas{
+    font-family: 'Covered By Your Grace';
+    margin-left: 520px;
+    margin-bottom: -5px;
+    transition: all 0.5s ease-in;
+    }
+
+
+.brillos{  
+    display: block;
+
+    }
+
+.brillo1{
+    height: 100px;
+    margin-top: -120px;
+    margin-left: 20px;
+    animation: brillos 1s infinite;
+	transform-origin: center;
+    }
+
+.brillo2{
+    height: 80px;
+    margin-top: -280px;
+    margin-left: 330px;
+    animation: brillos 1.2s infinite;
+	transform-origin: center;
+    }
+
+.planeta{
+    height: 50px ;
+    display: block;
+    margin-left: 430px;
+    margin-top: 40px;
+    animation: planeta 5s infinite;
+	transform-origin: center;
+}
+
+
+
+
+
+
+
+/* cards */
+:hover.card{
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+:hover.btn{
+    text-decoration: underline;
+    transition: all 0.3s ease-in;
+
+}
+.card{
+    margin-bottom: 50px;
+    display: block;
+    padding-top: 20px ;
+    text-align: left;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 500px;
+    border-radius: 3vw;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+   
+    }
+
+
+    .card1{
+        background-color:#E6E0F7;       
+    }
+
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+.cardtitulo{
+    font-family: 'recoletabold';
+    font-size:64px;
+    margin-bottom: -10px;
+    }
+
+    .violet{
+       color: #906AF7;
+    }
+
+.cardtxt{
+    font-family: 'Helvetica Neue';
+    font-size: 19px;
+    opacity: 60%;
+   
+    margin-bottom: 20px;
+  
+    }
+
+.cardlink{
+    font-family: 'Helvetica Neue';
+    font-weight: medium;
+    font-size: 17px;
+    color: #2896FE ;
+    text-decoration: none;
+}
+
+.btn{
+
+height: 44px;
+width: 140px;
+
+}
+
+.rowcard {
+    display: flex;
+  }
+  
+  .columncard {
+        flex: 50%;
+    
+  }
+
+
+  .cardcont, .btn{
+    position: relative;
+    width: 250px;
+  text-align: center;
+    margin: auto;
+  }
+
+  .cardcont{
+      margin-top: 165px;
+  }
+  .cardimg img{
+   height: 400px;
+   position: relative;
+   right: -5%;
+   top: 100px;
+   justify-content: center;
+   align-content: center;
+   flex-direction: column;
+  }
+
+.card2{
+   background-color: #F4E7E9;
+}
+
+ .cartel{
+     height: 150px;
+     display: block;
+     margin: auto;
+     margin-top: 330px;
+     justify-content: center;
+     align-content: center;
+     flex-direction: column;
+     margin-left: 200px;
+   
+ }
+
+ .constru{
+    font-family: 'recoletabold';
+     margin-top: 40px;
+     color: lightcoral;
+     font-size: 50px;
+ }
+/* mudafy main */
+
+.objetivo{
+    height: 100vh;
+    display: flex;
+}
+
+.home{
+    animation: hom;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.05);
+}
+
+
+.mtitulo{
+    font-family: 'recoletabold';
+    font-size: 64px;
+    color:#9069F8;
+    line-height: 64px;
+    padding-bottom: 20px;
+}
+
+.mcont{
+    font-family: 'Helvetica Neue';
+    font-size: 17px;
+    color: black;
+    opacity: .5;
+}
+
+.movi{
+height: 100vh;
+display: block;
+min-height: 700px;
+}
+
+.conti{
+    width: 350px;
+    text-align: right;
+    position: relative;
+   top: -60vh;
+   right: 150px;
+   display: block;
+   margin: auto;
+    z-index: -10;
+    opacity: 0;
+}
+
+.datos{
+    position: relative;
+    width: 150px;
+    text-align: left;
+   top: -90vh;
+    left: 50px;
+    display: block;
+   margin: auto;
+    z-index: -10;
+    opacity: 0;
+    min-height: 700px ;
+}
+
+.sub2{
+    font-family: 'recoletabold';
+    font-size: 17px;
+    color:#9069F8;
+}
+
+
+
+ 
+
+/*----MUDAFY ENTENDIENDO LA PLATAFORMA------ */
+    
+.section{
+margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 50px;
+
+   
+}
+
+.sub{
+    font-family: 'recoletabold';
+    font-size: 17px;
+    opacity: .3;
+}
+
+.mtitulo1{
+    font-family: 'recoletabold';
+    font-size: 64px;
+    color:#F86969;
+    line-height: 64px;
+    padding-bottom: 16px;
+}
+
+.entendiendo{
+  float: left;
+  width: 60vw;
+}
+
+.analisis{
+    columns: 2;
+    height: 80vh;
+}
+
+.anni{
+
+    margin-top: 20vh;
+}
+
+
+
+/*----MUDAFY CONOCIENDO AL USUARIO------ */
+    
+
+
+.green{
+    padding-top: 100px;
+    background-color: #E6F3E7;
+    position: relative;
+    z-index: -200;
+    overflow-x: hidden;
+    height: 1850px;
+    transition: all 0.5s ease-in;
+    margin-bottom: 100px;
+}
+
+.green2, .verde{
+    color: #679F6F;
+    opacity: 1;
+}
+
+.borrar{
+    display: block;
+    visibility: visible !important;
+}
+
+.fotin{
+    height: 700px;
+    display:block;
+    margin: auto;
+    padding-top: 50px;
+    z-index: 2;
+    
+
+}
+
+
+/*LOURDES*/    
+    
+.ahre{
+    display: none;
+    visibility: hidden;
+
+}
+
+.deskdeli{
+    display: none;
+    visibility: hidden;
+
+}
+
+.dperinfo1{
+    text-align: right;
+    position: relative;
+    width: 150px;
+    margin: auto;
+    top: -650px;
+  z-index: -2;
+    opacity: 0;
+}
+
+.dperinfo2{
+    width: 150px;
+    margin: auto;
+    position: relative;
+    top: -1125px;
+    z-index: -2;
+    opacity: 0;
+}
+
+.dinfo{
+    position: relative;
+margin: auto;
+}
+
+
+.name{
+    font-family: 'recoletabold';
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+/*competencia*/   
+
+.column {
+    float: left;
+    width: 25%;
+  }
+
+  .column img{
+  width: 110%;
+  margin-bottom: -40px;
+ 
+  }
+
+  .row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+.bench{
+    margin-top: 50px;
+    width: 80vw;
+
+}
+
+.compe{
+    width: 600px;
+}
+
+
+/*a crear*/
+
+
+
+.anima{
+    position: relative;
+   height: 100vw;
+   right: 16px;
+   margin-top: 10vh;
+
+}
+
+.animg{
+    width: 350px;
+    display: block;
+position: absolute; 
+opacity: 0;
+transition:all 0.5s ease-in;
+
+}
+
+.am1{
+    opacity: 1;
+}
+
+/* Ordenando la información */
+
+.red{
+    background-color: #F4E7E9;
+    margin: 0;
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 100px;
+    padding-bottom: 50px;
+   
+}
+
+.dpostit{
+    margin-bottom: 50px;
+}
+
+/* a crear*/
+
+.cosi{
+    margin-top: 100px;
+}
+
+
+.anima{
+    position: relative;
+   height: 100vh;
+   right: 16px;
+ 
+}
+
+
+
+
+.animg{
+    width: 40vw;
+    display: block;
+position: absolute; 
+left: 0;
+right: 0;
+top: 0;
+margin: auto;
+opacity: 0;
+transition:all .5s ease-in;
+
+}
+
+.am1{
+    opacity: 1;
+}
+
+/* Docu */
+.liviolet{
+    background-color: #E6E0F7;
+    margin: 0;
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 0 !important;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    padding-top: 20px ;
+    text-align: center;
+    padding-bottom: 20px ;
+    }
+
+
+.flink{
+    display: block;
+    font-family: 'recoletabold';
+    font-size: 23px;
+    margin-top: 30px;
+    }
+
+.flink a{
+    color: #2896FE ;
+    text-decoration: none;
+    }
+
+.fmensaje{
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    color: white;
+    opacity: .7;
+    margin: 32px;
+   padding-top: 30px;
+}
+
+
+
+
+
+
+/* ------------------------------------- */
+/* ------------------------------------- */
+/* --------------I P A D---------------- */
+/* ------------------------------------- */
+/* -------------------------------------- */
+
+
+@media screen and (max-width:1024px){
+
+
+    /* navbar IPAD */
+        .nav-links{
+            width: 40%;
+            transition: width 0.5s ease-in;
+        }
+        
+        .contenido{
+            width: 550px;
+            line-height: 30px;
+            transition: all 0.5s ease-in;
+        }
+
+        .personas{
+            margin-bottom: -45px;
+            margin-left: -450px;
+            transition: all 0.5s ease-in;
+        }
+
+
+}
+
+
+
+
+
+
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* ------------ IPAD CHIKITO------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+
+
+@media screen and (max-width:768px){
+
+  
+/* navbar IPADCHIKITO */
+
+    nav{
+        padding-left: 16px;
+        padding-right: 16px;
+        transition: padding-left 0.5s ease-in;
+        }
+
+.nav-links{
+       
+        margin-left: -16px;
+        position: fixed;
+        z-index: 1;
+        padding-left: 16px;
+        padding-top: 10vh;
+        padding-bottom: 20vh;
+        height: 94vh;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(245, 245, 247, .8);
+        width: 100vw;
+        opacity: 0;
+        transform: translatex(100%);
+        transition:all 0.5s ease-in;
+        min-height: 20vh;
+    }
+
+    .nav-links a {
+
+        color: black !important;
+        font-size: 40px;
+        opacity: .7;
+        
+    }
+    .fa-chevron-right{
+        opacity: 0;
+        
+    }
+
+    .hidden{
+        display: flex;   
+      
+    }
+    
+
+    .nav-links li{
+        opacity:0;
+
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .active a{
+      
+        text-decoration: underline;
+        color: black;
+        opacity: 1;
+}
+
+
+
+
+    /* main IPADCHIKITO */
+    
+        .contenido{
+        width: 450px;
+        line-height: 30px;
+        transition: all 0.5s ease-in;
+        }
+
+        .personas{
+        margin-bottom: -45px;
+        margin-left: -15px;
+        transition: all 0.5s ease-in;
+        }
+
+    .card{        
+        margin-left: 16px;
+        margin-right: 16px;
+        }
+
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* ------------  M O B I L E ------------ */
+/* -------------------------------------- */
+/* -------------------------------------- */
+
+
+
+
+@media screen and (max-width:430px){
+
+
+/* main MOBILE */
+
+    .inicio{
+        width: 75%;
+        margin: auto;
+    }
+
+
+    .hola, .jona{
+        font-family: 'recoletabold';
+        margin-top: 100px;
+        font-size: 64px;
+        line-height: 50px;
+        color: #679F6F;
+    }
+
+    .yo {
+    height: 250px;  
+    display: block;
+    margin: auto;
+    margin-top: -60px;
+    }
+
+
+    .jona{
+    text-align: right;
+    margin-top: -170px;
+    color:#FF8080;
+    }
+
+    .contenido{
+    width: 340px;
+    line-height: 30px;
+    margin-top: 200px;
+    transition: all 0.5s ease-in;
+    }
+
+    .personas{
+    margin-bottom: -45px;
+    margin-left: 230px;
+    transition: all 0.5s ease-in;
+    }
+
+    h2{
+        font-size:9px;
+    }
+    
+    
+    .brillo1{
+        height: 50px;
+        margin-top: -50px;
+        margin-left: 5px;
+       
+    }
+    
+    .brillo2{
+        height: 55px;
+        margin-top: -180px;
+        margin-left: 200px;
+    }
+    
+    .planeta{
+        height: 30px ;
+        display: block;
+        margin-left: 250px;
+        margin-top: 30px;
+
+    }
+    
+
+
+
+/*----card------ */
+    
+    .textocard
+    {
+        margin-right: 16px;
+        margin-left: 16px;
+}
+
+
+
+
+
+/*----MUDAFY MAIN------ */
+
+    .home{
+        animation: hom;
+        height: 462px;
+    }
+    
+    
+    .mtitulo{
+        font-size: 34px;
+        line-height: 34px;
+    }
+    
+    .mcont{
+        font-size: 14px;
+    }
+    
+  
+    .conti{
+        width: 200px;
+       top: -60vh;
+       right: 2vw;
+    }
+    
+    .datos{
+        width: 110px;
+       top: -670px;
+        left: -4vw;
+    }
+    
+    .sub2{
+
+        font-size: 14px;
+}
+    
+    
+    
+
+/*----MUDAFY ENTENDIENDO LA PLATAFORMA------ */
+
+    
+  
+    
+
+   
+
+    .anni{
+        margin-top: 0;
+    }
+    
+  
+
+    .section{
+        overflow: hidden;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 50px;
+        margin-left: 0;
+        margin-right: 0;
+       
+    }
+    
+    .sub{
+        font-family: 'recoletabold';
+        font-size: 17px;
+        color: black;
+        opacity: .3;
+    }
+    
+    .mtitulo1{
+        font-family: 'recoletabold';
+        font-size: 34px;
+        color:#F86969;
+        line-height: 34px;
+        padding-bottom: 16px;
+    }
+
+    .compe{
+        width: auto;
+    }
+    
+    .entendiendo{
+        width: 90vw;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        columns: 1;
+}
+    
+.analisis{
+    columns: 1;
+    height: 500px;
+}
+    
+/*----MUDAFY PERSONA------ */
+    
+.green{
+    overflow-x: hidden;
+    height: 1600px;
+    transition: all 0.5s ease-in;
+    z-index: -100;
+
+}
+
+    .green{
+       margin-bottom: 50px;
+       z-index: -100;
+    }
+    
+    .green2, .verde{
+        color: #679F6F;
+        opacity: 1;
+}
+
+.ahre, .deskdeli{
+    display: block;
+}
+
+.borrar, .dperinfo1, .dperinfo2{
+    display: none;
+    visibility: hidden;
+}
+
+
+
+/*LOURDES*/    
+    
+    .perfoto img{
+        height: 515px;
+        z-index: 200;
+    }
+    
+    .perfoto{
+        overflow: hidden;
+        height: 515px;
+        display: block;
+        margin-top: 50px;
+        padding-right: 32px;
+    
+    }
+    
+    .perinfo1, .perinfo2{
+      
+        position: relative;
+        width: 120px;
+        opacity: 0;
+
+        z-index: -2;
+    }
+    
+    .perinfo1{
+        text-align: right;
+        top: -515px;
+        left: 25vw;
+    }
+    
+    .perinfo2{
+        top: -935px;
+        left: 25vw;
+    }
+    
+    .perso{
+    position: relative;
+        height: 600px;
+    }
+    
+    
+    .bench{
+        margin-top: 50px;
+        width: 80vw;
+    
+}
+
+
+.dinfo{
+    display: none;
+    visibility: hidden;
+}
+/*----MUDAFY popup IMG------ */  
+    
+    section .box .imgbx.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(245, 245, 247, .9);
+      
+    
+    }
+    .imgbx.active .bench{
+        width:100%;
+       position: absolute;
+       top:0;
+       bottom:0;
+       margin: auto;
+       padding-right: 16px;
+       padding-left: 16px;
+       touch-action: manipulation;
+}
+    
+
+/*----MUDAFY BACKGROUND RED----- */  
+    .red{
+        background-color: #F4E7E9;
+        padding-top: 50px;
+        padding-bottom: 50px;
+       
+}
+    
+/*----MUDAFY A CREAR----- */  
+    .anima{
+        position: relative;
+       height: 100vw;
+       right: 16px;
+       margin-top: 10vh;
+    
+    }
+    
+    .animg{
+        width: 350px;
+        display: block;
+    position: absolute; 
+    opacity: 0;
+    transition:all 0.5s ease-in;
+    
+    }
+    
+    .am1{
+        opacity: 1;
+    }
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- */
+/* ------------ A N I M A C I O N E S ------------ */
+/* ----------------------------------------------- */
+
+
+.nav-active{
+    transform: translateX(0%)!important;
+    opacity: 1;
+    transition:all 0.5s ease-in;
+}
+
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(0%);
+        transition:all 0.8s ease-in;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+        transition:all 2.8s ease-in;
+    }
+}
+
+@keyframes brillos {
+    from { transform: none; }
+    50% { transform: scale(1.04)}
+    to { transform: none; }
+}
+@keyframes loader {
+    from { transform: none; }
+    50% { transform: scale(.5)}
+    to { transform: none; }
+}
+
+
+@keyframes planeta {
+    from { transform: none; }
+    50% { transform: rotate(-10deg) }
+    to { transform: none; }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,5px); 
+    background-color: #FF8080;
+  
+
+}
+.toggle .line2{
+    opacity: 0;
+    background-color: #FF8080;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
+    background-color: #FF8080;
+}
+ 
+
+
+
+
+/*--------------------the end------------------- */
