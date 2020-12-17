@@ -12,6 +12,7 @@
 
 
 body{
+    
      background-color:  #F5F5F7;
 }   
 
@@ -56,7 +57,22 @@ body{
 
 
 
-
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype');
+    src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit; 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 
 
@@ -101,6 +117,10 @@ nav{
 
 .hidden{
 display: none;
+    }
+
+    .nav-links li:nth-child(1){
+        display: none;
     }
 
 .nav-links{
@@ -264,10 +284,12 @@ h2{
     a:link, a:visited, a:active {
         text-decoration:none;
     }
+    
 .cardtitulo{
     font-family: 'recoletabold';
     font-size:64px;
     margin-bottom: -10px;
+
     }
 
     .violet{
@@ -278,9 +300,7 @@ h2{
     font-family: 'Helvetica Neue';
     font-size: 19px;
     opacity: 60%;
-   
     margin-bottom: 20px;
-  
     }
 
 .cardlink{
@@ -292,10 +312,8 @@ h2{
 }
 
 .btn{
-
 height: 44px;
 width: 140px;
-
 }
 
 .rowcard {
@@ -304,13 +322,14 @@ width: 140px;
   
   .columncard {
         flex: 50%;
-    
+        transition:all .5s ease-in;
+
   }
 
 
   .cardcont, .btn{
     position: relative;
-    width: 250px;
+    transition:all .5s ease-in;
   text-align: center;
     margin: auto;
   }
@@ -318,6 +337,7 @@ width: 140px;
   .cardcont{
       margin-top: 165px;
   }
+
   .cardimg img{
    height: 400px;
    position: relative;
@@ -326,6 +346,8 @@ width: 140px;
    justify-content: center;
    align-content: center;
    flex-direction: column;
+   transition:all .5s ease-in;
+
   }
 
 .card2{
@@ -341,6 +363,7 @@ width: 140px;
      align-content: center;
      flex-direction: column;
      margin-left: 200px;
+     transition:all .5s ease-in;
    
  }
 
@@ -349,7 +372,9 @@ width: 140px;
      margin-top: 40px;
      color: lightcoral;
      font-size: 50px;
+     opacity: .5 !important;
  }
+ 
 /* mudafy main */
 
 .objetivo{
@@ -378,7 +403,7 @@ width: 140px;
     font-family: 'Helvetica Neue';
     font-size: 17px;
     color: black;
-    opacity: .5;
+    opacity: .5 !important;
 }
 
 .movi{
@@ -418,7 +443,9 @@ min-height: 700px;
     color:#9069F8;
 }
 
-
+.rred{
+    color: #F86969;
+}
 
  
 
@@ -445,6 +472,26 @@ margin-left: 10vw;
     line-height: 64px;
     padding-bottom: 16px;
 }
+.analisis{
+  display: flex;
+  width: 100vw;
+  
+}
+
+
+.acol{
+    
+    flex: 50%;
+    transition: all 0.5s ease-in;
+
+}
+
+.entendiendo{
+    width: 60vw;
+    position: relative;
+    left: 2vw;
+  }
+/* BACKUP
 
 .entendiendo{
   float: left;
@@ -456,6 +503,7 @@ margin-left: 10vw;
     height: 80vh;
 }
 
+*/
 .anni{
 
     margin-top: 20vh;
@@ -634,7 +682,7 @@ transition:all 0.5s ease-in;
     position: relative;
    height: 100vh;
    right: 16px;
- 
+
 }
 
 
@@ -650,12 +698,27 @@ top: 0;
 margin: auto;
 opacity: 0;
 transition:all .5s ease-in;
-
 }
 
 .am1{
     opacity: 1;
 }
+
+
+.ira{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+position: relative;
+top: -150px;
+}
+
+.ira:hover{
+    text-decoration: underline;
+}
+
+
 
 /* Docu */
 .liviolet{
@@ -672,7 +735,7 @@ transition:all .5s ease-in;
 /* footer */
 
 footer{
-    background-color: black;
+    background-color: #F0F0F4;
     padding-top: 20px ;
     text-align: center;
     padding-bottom: 20px ;
@@ -694,7 +757,7 @@ footer{
 .fmensaje{
     font-family: 'Helvetica Neue';
     font-size: 14px;
-    color: white;
+    color: black;
     opacity: .7;
     margin: 32px;
    padding-top: 30px;
@@ -715,6 +778,11 @@ footer{
 @media screen and (max-width:1024px){
 
 
+
+/*----MUDAFY MAIN------ */
+
+
+
     /* navbar IPAD */
         .nav-links{
             width: 40%;
@@ -733,6 +801,43 @@ footer{
             transition: all 0.5s ease-in;
         }
 
+
+        .rowcard{
+            display: block;
+            transition:all .5s ease-in;
+
+        } 
+/* card*/
+        .cardcont{
+            margin-top: 10px;
+        }
+
+        .cardimg img{
+            display: block;
+            margin: auto;
+            top: 10px;
+            height: 300px;
+            right: 0;
+        }
+
+        .cartel{
+            display: block;
+            margin: auto;
+            margin-top: 75px;
+        }
+
+        .constru{
+            margin-top: 200px;
+        }
+
+
+/*entendiendo*/
+
+.acol:nth-child(1){
+    margin-top: -20vh;
+    transition: all 0.5s ease-in;
+
+    }
 
 }
 
@@ -765,16 +870,16 @@ footer{
         margin-left: -16px;
         position: fixed;
         z-index: 1;
-        padding-left: 16px;
         padding-top: 10vh;
         padding-bottom: 20vh;
         height: 94vh;
         top: 60px;
         display: flex;
+        text-align: center;
         flex-direction: column;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        background-color: rgba(245, 245, 247, .8);
+        background-color: rgba(245, 245, 247, .9);
         width: 100vw;
         opacity: 0;
         transform: translatex(100%);
@@ -783,10 +888,10 @@ footer{
     }
 
     .nav-links a {
+        font-family: 'recoletabold';
 
-        color: black !important;
+        color: #679F6F !important;
         font-size: 40px;
-        opacity: .7;
         
     }
     .fa-chevron-right{
@@ -794,10 +899,12 @@ footer{
         
     }
 
-    .hidden{
-        display: flex;   
-      
+    .nav-links li:nth-child(1){
+        display: block;  
+
+
     }
+ 
     
 
     .nav-links li{
@@ -838,6 +945,151 @@ footer{
         margin-left: 16px;
         margin-right: 16px;
         }
+   /* main */
+     
+.home{
+    animation: hom;
+    height: 462px;
+}
+
+
+.mtitulo{
+    font-size: 34px;
+    line-height: 34px;
+}
+
+.mcont{
+    font-size: 14px;
+}
+
+
+.conti{
+    width: 200px;
+   top: -60vh;
+   right: 2vw;
+}
+
+.datos{
+    width: 110px;
+   top: -80vh;
+    left: -4vw;
+}
+
+.sub2{
+
+    font-size: 14px;
+}
+
+/*ENtendiendo*/
+.acol:nth-child(1){
+    margin-top: 0;
+    transition: all 0.5s ease-in;
+
+    }
+
+    .analisis{
+        display: block;
+    
+      }
+      
+
+
+    .anni{
+        margin-top: 0;
+    }
+    
+  
+
+    .section{
+        overflow: hidden;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-bottom: 50px;
+        margin-left: 0;
+        margin-right: 0;
+       
+    }
+    
+    .sub{
+        font-family: 'recoletabold';
+        font-size: 17px;
+        color: black;
+        opacity: .3;
+    }
+    
+    .mtitulo1{
+        font-family: 'recoletabold';
+        font-size: 34px;
+        color:#F86969;
+        line-height: 34px;
+        padding-bottom: 16px;
+    }
+
+    .compe{
+        width: auto;
+    }
+    
+    .entendiendo{
+        width: 90vw;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    
+}
+
+/*Lourdes*/
+
+.fotin{
+    height: 500px;
+    display:block;
+    margin: auto;
+    padding-top: 50px;
+    z-index: 2;
+    
+
+}
+ 
+.dperinfo1{
+    text-align: right;
+    position: relative;
+    width: 150px;
+    margin: auto;
+    top: -450px;
+  z-index: -2;
+    opacity: 0;
+    right: -90px;
+}
+
+.dperinfo2{
+    width: 150px;
+    margin: auto;
+    position: relative;
+    top: -840px;
+    z-index: -2;
+    right: 90px;
+    opacity: 0;
+}
+   .green{
+    padding-top: 50px;
+    height: 1650px;  
+   }
+
+   .green2, .verde{
+    color: #679F6F;
+    opacity: 1;
+}
+
+
+.anima{
+   height: 50vh;
+  
+}
+
+
+.ira{
+    top: -10px;
+    height: 50px;
+    margin-bottom: 100px;}
+
 
 }
 
@@ -857,7 +1109,7 @@ footer{
 
 
 
-@media screen and (max-width:430px){
+@media screen and (max-width:550px){
 
 
 /* main MOBILE */
@@ -870,7 +1122,7 @@ footer{
 
     .hola, .jona{
         font-family: 'recoletabold';
-        margin-top: 100px;
+        margin-top: 20vh;
         font-size: 64px;
         line-height: 50px;
         color: #679F6F;
@@ -893,7 +1145,7 @@ footer{
     .contenido{
     width: 340px;
     line-height: 30px;
-    margin-top: 200px;
+    margin-top: 30vh;
     transition: all 0.5s ease-in;
     }
 
@@ -934,15 +1186,41 @@ footer{
 
 /*----card------ */
     
-    .textocard
-    {
-        margin-right: 16px;
-        margin-left: 16px;
+.card{
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 450px;
 }
 
 
 
+.cardimg img{
 
+    top: 40px;
+    height: 250px;
+
+}
+
+.cartel{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.constru{
+    margin-top: 80px;
+}
+
+.cardtitulo{
+    font-family: 'recoletabold';
+    font-size:43px;
+    margin-bottom: 0px;
+    line-height: 50px;
+    }
+
+    .cardtxt{
+        font-size: 17px;
+    }
 
 /*----MUDAFY MAIN------ */
 
@@ -990,53 +1268,6 @@ footer{
 
    
 
-    .anni{
-        margin-top: 0;
-    }
-    
-  
-
-    .section{
-        overflow: hidden;
-        padding-left: 32px;
-        padding-right: 32px;
-        margin-bottom: 50px;
-        margin-left: 0;
-        margin-right: 0;
-       
-    }
-    
-    .sub{
-        font-family: 'recoletabold';
-        font-size: 17px;
-        color: black;
-        opacity: .3;
-    }
-    
-    .mtitulo1{
-        font-family: 'recoletabold';
-        font-size: 34px;
-        color:#F86969;
-        line-height: 34px;
-        padding-bottom: 16px;
-    }
-
-    .compe{
-        width: auto;
-    }
-    
-    .entendiendo{
-        width: 90vw;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        columns: 1;
-}
-    
-.analisis{
-    columns: 1;
-    height: 500px;
-}
-    
 /*----MUDAFY PERSONA------ */
     
 .green{
@@ -1171,16 +1402,32 @@ footer{
     position: absolute; 
     opacity: 0;
     transition:all 0.5s ease-in;
-    
+    bottom: 40px;
+
     }
     
     .am1{
         opacity: 1;
     }
     
+
+    .ira{
+    top: 10px;
+    margin-bottom: 50px;}
+    .cosi{
+        margin-top: 50px;
+    }
     
     
 
+
+    .liviolet{
+    
+        padding-top: 50px;
+       
+    }
+    
+    
 }
 
 
@@ -1249,7 +1496,6 @@ footer{
     transform: rotate(45deg) translate(-5px,-5px);
     background-color: #FF8080;
 }
- 
 
 
 
