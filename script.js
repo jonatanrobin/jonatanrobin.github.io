@@ -84,7 +84,7 @@ tl3.to('.am11', 1, {opacity: 1, ease: Power4.easeInOut});
 tl3.to('.am12', 1, {opacity: 1, ease: Power4.easeInOut});
 tl3.to('.am13', 1, {opacity: 1, ease: Power4.easeInOut});
 tl3.to('.am14', 1, {opacity: 1, ease: Power4.easeInOut});
-
+tl3.to('.am15', 1, {opacity: 1, ease: Power4.easeInOut});
 
 
 tl4.to('.dperinfo1', .5, {x:-330,opacity: 1,}, );
