@@ -96,8 +96,8 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     align-items: center;   
     height: 60px;
     background-color: #F5F5F7;
@@ -267,8 +267,8 @@ h2{
     display: block;
     padding-top: 20px ;
     text-align: left;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     height: 500px;
     border-radius: 3vw;
     transition: all 0.2s ease-in;
@@ -403,7 +403,7 @@ width: 140px;
     font-family: 'Helvetica Neue';
     font-size: 17px;
     color: black;
-    opacity: .5 !important;
+    opacity: .6 !important;
 }
 
 .movi{
@@ -452,8 +452,8 @@ min-height: 700px;
 /*----MUDAFY ENTENDIENDO LA PLATAFORMA------ */
     
 .section{
-margin-left: 10vw;
-    margin-right: 10vw;
+margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 50px;
 
    
@@ -477,8 +477,12 @@ margin-left: 10vw;
   width: 100vw;
   
 }
+.acol:nth-child(1){
+margin-right: 10vw;
+transition: all 0.5s ease-in;
+min-width: 500px; }
 
-
+  
 .acol{
     
     flex: 50%;
@@ -489,7 +493,6 @@ margin-left: 10vw;
 .entendiendo{
     width: 60vw;
     position: relative;
-    left: 2vw;
   }
 /* BACKUP
 
@@ -601,7 +604,7 @@ margin: auto;
 
   .column img{
   width: 110%;
-  margin-bottom: -40px;
+  margin-bottom: -20px;
  
   }
 
@@ -620,7 +623,7 @@ margin: auto;
 
 .bench{
     margin-top: 50px;
-    width: 80vw;
+    width: 70vw;
 
 }
 
@@ -660,8 +663,8 @@ transition:all 0.5s ease-in;
     background-color: #F4E7E9;
     margin: 0;
     width: 100vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     padding-top: 100px;
     padding-bottom: 50px;
    
@@ -725,8 +728,8 @@ top: -150px;
     background-color: #E6E0F7;
     margin: 0;
     width: 100vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     padding-top: 100px;
     padding-bottom: 50px;
     margin-bottom: 0 !important;
@@ -836,8 +839,10 @@ footer{
 .acol:nth-child(1){
     margin-top: -20vh;
     transition: all 0.5s ease-in;
-
+    margin-right: 0vw;
     }
+
+
 
 }
 
@@ -1258,13 +1263,18 @@ footer{
 }
     
     
-    
+
 
 /*----MUDAFY ENTENDIENDO LA PLATAFORMA------ */
 
     
+.acol:nth-child(1){
   
+    transition: all 0.5s ease-in;
+    min-width: auto;
+        }
     
+
 
    
 
