@@ -8,12 +8,16 @@
      margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+  
     }
 
 
 body{
-    
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+
      background-color:  #F5F5F7;
+  
 }   
 
 .loader {
@@ -194,11 +198,12 @@ h2{
     display: block;
     margin: auto;
     text-align: center;
-    width: 700px;
+
+    max-width: 730px;
     font-family: 'Helvetica Neue';
-    font-size: 17px;
+    font-size: 19px;
     margin-top: 300px;
-    line-height: 17px;
+    line-height: 22px;
     margin-bottom: 100px;
     transition: all 0.5s ease-in;
     }
@@ -209,8 +214,8 @@ h2{
 
 .personas{
     font-family: 'Covered By Your Grace';
-    margin-left: 520px;
-    margin-bottom: -5px;
+    margin-left: 600px;
+    margin-bottom: -10px;
     transition: all 0.5s ease-in;
     }
 
@@ -270,7 +275,7 @@ h2{
     margin-left: 15vw;
     margin-right: 15vw;
     height: 500px;
-    border-radius: 3vw;
+    border-radius: 2vw;
     transition: all 0.2s ease-in;
     overflow: hidden;
    
@@ -401,9 +406,10 @@ width: 140px;
 
 .mcont{
     font-family: 'Helvetica Neue';
+    font-weight: 500 ;
     font-size: 17px;
     color: black;
-    opacity: .6 !important;
+    opacity: .4 !important;
 }
 
 .movi{
@@ -794,13 +800,14 @@ footer{
         
         .contenido{
             width: 550px;
-            line-height: 30px;
+
+            line-height: 32px;
             transition: all 0.5s ease-in;
         }
 
         .personas{
-            margin-bottom: -45px;
-            margin-left: -450px;
+            margin-bottom: -52px;
+            margin-left: -150px;
             transition: all 0.5s ease-in;
         }
 
@@ -936,13 +943,13 @@ footer{
     
         .contenido{
         width: 450px;
-        line-height: 30px;
+        line-height: 32px;
         transition: all 0.5s ease-in;
         }
 
         .personas{
-        margin-bottom: -45px;
-        margin-left: -15px;
+        margin-bottom: -52px;
+        margin-left: -10px;
         transition: all 0.5s ease-in;
         }
 
@@ -1150,12 +1157,13 @@ footer{
     .contenido{
     width: 340px;
     line-height: 30px;
+    font-size: 17px;
     margin-top: 30vh;
     transition: all 0.5s ease-in;
     }
 
     .personas{
-    margin-bottom: -45px;
+    margin-bottom: -48px;
     margin-left: 230px;
     transition: all 0.5s ease-in;
     }
@@ -1195,6 +1203,7 @@ footer{
     padding-left: 16px;
     padding-right: 16px;
     height: 450px;
+    border-radius: vw;
 }
 
 
